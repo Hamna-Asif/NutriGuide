@@ -1,0 +1,141 @@
+/* Resetting margins and paddings for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('background.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Adjust the container to blend better with the background */
+.container {
+    background-image: url('frame-background.jpg'); /* Replace with your frame-specific image */
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for blending */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 600px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spacing content evenly */
+}
+
+/* Logo Section */
+.logo-section {
+    margin-bottom: 15px;
+    margin-top: 20px; /* Added margin-top to center content lower */
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #4d93df; /* Blue border for emphasis */
+}
+
+.app-name {
+    font-size: 26px; /* Larger font size for title */
+    font-weight: bold;
+    color: #00b7ff; /* Vibrant blue color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+/* Welcome Message Section */
+.welcome-message h2 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Buttons Section */
+.buttons {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adds spacing for balance */
+}
+
+.admin-button,
+.get-started-button {
+    width: 85%;
+    padding: 12px;
+    font-size: 14px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.admin-button {
+    background-color: #6c757d;
+}
+
+.admin-button:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+.get-started-button {
+    background-color: #4d93df;
+}
+
+.get-started-button:hover {
+    background-color: #357ab9;
+    transform: scale(1.05);
+}
+
+/* Description Text */
+.description {
+    font-size: 12px;
+    color: #555;
+    margin: 20px 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Background overlay effect for the container */
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('background.PNG'); /* Replace with your decorative background image */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 30; /* Set opacity to 1 for the original color */
+    border-radius: 15px;
+}
+
+/* Adjusting alignment for better balance */
+.container > *:not(:last-child) {
+    margin-bottom: 10px; /* Spacing between child elements */
+}

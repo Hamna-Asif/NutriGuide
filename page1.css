@@ -1,0 +1,164 @@
+/* Define the container size */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 600px;
+  margin: 0 auto; /* Center horizontally */
+  border: 1px solid #ccc; /* Optional border for visual clarity */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Prevent content overflow */
+  background-color: #f9f9f9; /* Optional background color */
+  font-family: 'Arial', sans-serif ;/* Roman font */
+  font-weight: 600; /* Bold font */
+  position: relative; /* Make sure the position of child elements is relative to this container */
+}
+
+/* Hide a page by default */
+.hidden {
+  display: none;
+}
+
+/* Header section styling */
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h2 {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif; /* Roman font */
+  font-weight: 600; /* Bold font */
+}
+
+/* Button styles */
+button {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px; /* Make buttons round-edged */
+  cursor: pointer;
+  font-family: 'Arial', sans-serif; /* Roman font */
+  font-weight: 600; /* Bold font */
+}
+
+.tab, .nav-item, .search-icon {
+  margin: 0 5px; /* Add spacing between buttons */
+  background-color: #dcdcdc; /* Gray background color */
+  color: #007bff; /* Blue text color */
+  font-family: 'Arial', sans-serif; /* Roman font */
+  font-weight: 600; /* Bold font */
+}
+
+/* Active tab styling */
+.tab.active, .nav-item.active {
+  background-color: #c0c0c0; /* Slightly darker gray for active state */
+}
+
+/* Navigation tabs (Moved to the top under the header) */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #e6e6e6;
+  padding: 10px 0;
+  margin: 0; /* Remove margin to eliminate gap between tabs and search bar */
+}
+
+.tab {
+  flex-grow: 1;
+  text-align: center;
+  padding: 8px;
+  font-family: 'Arial', sans-serif; /* Roman font */
+  font-weight: 600; /* Bold font */
+}
+
+/* Search bar styling (Removed gap) */
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 0; /* Removed the gap between the search icon and input */
+  margin-top: 0; /* Remove any margin-top to eliminate space above search bar */
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Round-edged search bar */
+  font-size: 14px;
+  font-family: 'Arial', sans-serif; /* Roman font */
+  font-weight: 600; /* Bold font */
+}
+
+/* Add Food Button Styling */
+.add-food {
+  margin: 10px 0; /* Add space above and below the Add Food button */
+  text-align: center;
+  margin-top: 40px;
+}
+
+.add-food .nav-item {
+  background-color: #7aa5b8; /* Green background for Add Food button */
+  color: white; /* White text */
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-food .nav-item {
+  background-color: #7aa5b8; /* Slightly darker green on hover */ margin-top: 10px;
+
+}
+.search-results {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto; /* Add scroll for long lists */
+}
+
+.search-results div {
+  padding: 5px 0;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-results div:last-child {
+  border-bottom: none;
+}
+
+
+/* Bottom navigation */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #e6e6e6;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-item {
+  flex-grow: 1;
+  text-align: center;
+  padding: 8px;
+  font-family: 'Arial', sans-serif; /* Roman font */
+  font-weight: 600; /* Bold font */
+}
+
+.nav-item:hover {
+  background-color: #ccc; /* Hover effect for bottom nav items */
+}

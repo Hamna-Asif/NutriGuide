@@ -1,0 +1,125 @@
+/* Basic Styling for Profile Page */
+html, body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 300px;
+  height: 600px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 100px;
+  
+}
+
+.profile-section p {
+  font-size: 14px;
+  margin: 5px 0;
+  margin-left: 10%;
+}
+.profile-section p b {
+  font-weight: bold; /* Ensure labels are bold */
+  font-family: Arial, sans-serif; /* Ensure labels use Arial font */
+}
+
+.profile-section p span {
+  font-family: Arial, sans-serif; /* Ensure data uses Arial font */
+  margin-left: 5px; /* Adds slight spacing between labels and data */
+}
+.profile-picture {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Match width for a perfect circle */
+  border-radius: 50%; /* Makes the image circular */
+  margin: 20px 0; /* Adds space around the image */
+  object-fit: cover; /* Ensures the image fits well inside the circle */
+  display: block; /* Ensures proper centering */
+  margin-left: auto; /* Centers the image horizontally */
+  margin-right: auto; /* Centers the image horizontally */
+}
+
+
+.back-button {
+  background-color: transparent;
+  border: none;
+  color: #003cff;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.search-button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #5aa3f1;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.nav-buttons button {
+  padding: 10px;
+  background-color: #d1e7dd;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  flex: 1;
+  margin: 5px;
+}
+
+.nav-buttons button:hover,
+.search-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+.add-food-button {
+  margin-top: 120px;
+  padding: 10px;
+  background-color: #5aa3f1;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.add-food-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}

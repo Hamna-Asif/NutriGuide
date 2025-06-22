@@ -1,0 +1,127 @@
+/* Container styling */
+.form-container {
+    width: 90%;
+    max-width: 390px;  /*CHANGED THE SIZE */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif; 
+
+/*MADE A CHANGE HERE */
+
+     /* Center the container vertically and horizontally */
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+/*CHANGE ENDED HERE */
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 5px; /* Move the text upwards */
+    font-family: 'Arial', sans-serif; /* Set to Arial */
+}
+
+h2 span {
+    font-size: 14px;
+    color: #666;  /* Grey color for 2/2 */
+    display: block; /* Place it on a new line */
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Set to Arial */
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+    font-family: 'Arial', sans-serif; /* Set to Arial */
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Set to Arial */
+}
+
+/* Button styling */
+button {
+    width: 48%;
+    padding: 12px;
+    font-size: 14px;
+    background-color: #a8c3d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif; /* Set to Arial */
+    margin-right: 4%;
+}
+
+button:hover {
+    background-color: #7aa5b8;
+}
+
+button:active {
+    background-color: #6a8d9e;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Dropdown styling for Height and Weight */
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-container input {
+    width: 75%;
+    margin-right: 10px;
+}
+
+.input-container select {
+    width: 20%;
+    font-family: 'Arial', sans-serif; /* Set to Arial */
+}
+
+/* Back arrow to navigate to Page 1 */
+.back-arrow {
+    font-size: 18px;
+    color: #3db6b3;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
+    text-align: left;
+    font-family: 'Arial', sans-serif; /* Set to Arial */
+}
+
+.back-arrow:hover {
+    color: #2a9993;
+}

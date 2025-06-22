@@ -1,0 +1,93 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    width: 320px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Back Button */
+  .back-button {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .back-button a {
+    text-decoration: none;
+    color: #7d9eaf;
+    font-size: 20px;
+  }
+  
+  .back-button a:hover {
+    color: #6a8b99;
+  }
+  
+  /* Form and Inputs */
+  h1 {
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 22px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    pointer-events: auto; /* Ensure inputs are clickable */
+    display: block;       /* Ensure inputs are visible */
+    z-index: 1;
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .password-container .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none; /* Prevent text selection */
+    color: #7d9eaf; /* Match button theme */
+  }
+  
+  .password-container .eye-icon:hover {
+    color: #6a8b99; /* Slight hover effect */
+  }
+  
+  /* Button */
+  .login-btn {
+    background-color: #7d9eaf;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .login-btn:hover {
+    background-color: #6a8b99;
+  }
+  

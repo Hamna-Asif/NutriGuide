@@ -1,0 +1,58 @@
+/* General Styling for Copyright Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 300px;
+    height: 600px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Back Button Styling */
+  .back-button {
+    align-self: flex-start;
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+  }
+  
+  .back-button:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 20px;
+    margin: 40px 0;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  /* Paragraph Text */
+  p {
+    font-size: 14px;
+    line-height: 2.5;
+    margin: 10px 0;
+    text-align: center;
+    color: #4a4a4a;
+  }
+  

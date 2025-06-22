@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signuppage.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Back Button -->
+        <button class="back-button" onclick="goBack()">←</button>
+
+        <h2>Sign Up</h2>
+
+        <form id="signup-form">
+            <input type="email" class="input-field" placeholder="Email" required>
+            <div class="password-container">
+                <input type="password" id="password" class="input-field" placeholder="Password" required>
+                <span class="eye-icon" onclick="togglePassword()">👁️</span>
+            </div>
+            <input type="password" class="input-field" placeholder="Confirm Password" required>
+
+            <button type="submit" class="submit-button">Sign Up</button>
+        </form>
+
+        <!-- <div class="social-login">
+            <button class="apple" onclick="socialLogin('apple')">Sign up with Apple</button>
+            <button class="google" onclick="socialLogin('google')">Sign up with Google</button>
+            <button class="facebook" onclick="socialLogin('facebook')">Sign up with Facebook</button>
+        </div> -->
+
+      
+        <p>Already have an account? <a href="loginpage.html" id="login-link">Log in</a></p>
+    </div>
+
+    <script src="signuppage.js" defer></script> <!-- Link to the external JS file -->
+</body>
+</html>

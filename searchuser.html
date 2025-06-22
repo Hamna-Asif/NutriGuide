@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User - NutriGuide</title>
+    <link rel="stylesheet" href="searchuser.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="back-button" onclick="NavigationManager.navigateBack()">← Back</button>
+            <h2>Search User</h2>
+        </div>
+
+        <div class="search-section">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search for a user..."
+                oninput="NavigationManager.searchUser()"
+                onkeypress="NavigationManager.searchUser(event)"
+            />
+            <button class="delete-button" onclick="NavigationManager.deleteUser()">Delete User</button>
+        </div>
+
+        <!-- Area to display user details -->
+        <div id="user-details" class="user-details"></div>
+
+        <div class="bottom-navigation">
+            <button class="nav-button" onclick="NavigationManager.navigateToHome()">Home</button>
+            <!-- <button class="nav-button" onclick="NavigationManager.navigateToDiaries()">Diaries</button> -->
+            <button class="nav-button" onclick="NavigationManager.navigateToProfile()">Profile</button>
+            <button class="nav-button" onclick="NavigationManager.navigateToSettings()">Settings</button>
+        </div>
+    </div>
+
+    <script src="searchuser.js"></script>
+</body>
+</html>

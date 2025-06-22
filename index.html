@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriGuide - Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Function to redirect to the login page when the login button is clicked
+    function redirectToLogin() {
+      window.location.href = 'loginpage.html';  // Replace with your login page URL
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="logo.PNG" alt="NutriGuide Logo">
+    </div>
+    <h1>NutriGuide</h1>
+    <!-- Added the onclick event to redirect when the login button is clicked -->
+    <button class="login-btn" onclick="redirectToLogin()">Log in</button>
+    
+    <div class="signup-link">
+      <p>Don’t have an account? <a href="signupPage.html">Sign up</a></p> <!-- Link to sign up page -->
+    </div>
+  </div>
+</body>
+</html>

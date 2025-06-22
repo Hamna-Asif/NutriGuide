@@ -1,0 +1,106 @@
+
+.form-container {
+    width: 60%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 18px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  /* Label styling */
+  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  /* Input field styling */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  /* Specific styling for phone input */
+  .phone-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone-container select {
+    width: 25%;
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  .phone-container input {
+    width: 75%;
+    padding: 10px;
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #a8c3d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  button:hover {
+    background-color: #7aa5b8;
+  }
+  
+  /* Dropdown styling for "You're here for" */
+  select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url('down-arrow-icon.png') no-repeat right 10px center;
+    background-color: #fff;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  select:invalid {
+    color: #888; /* Placeholder color for the default option */  
+  }
+  

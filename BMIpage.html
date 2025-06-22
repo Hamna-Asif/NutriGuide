@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Calculation</title>
+    <link rel="stylesheet" href="BMIpage.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button id="backButton" onclick="goBack()">&larr;</button>
+            <h2>Your Calculation</h2>
+        </header>
+
+        <div class="calculation-table">
+            <div class="table-row">
+                <span>Your Height</span>
+                <span id="userHeight">176 cm</span>  <!-- Value replaced by JS -->
+            </div>
+            <div class="table-row">
+                <span>Your Weight</span>
+                <span id="userWeight">90 kg</span>  <!-- Value replaced by JS -->
+            </div>
+            <div class="table-row">
+                <span>Your BMI</span>
+                <span id="userBMI">29.1 (Overweight)</span>  <!-- Value replaced by JS -->
+            </div>
+            <div class="table-row">
+                <span>Your Weight Status</span>
+                <span id="userWeightStatus">Normal</span> <!-- This will be updated by JavaScript -->
+            </div>            
+        </div>
+
+        <p class="instruction">We need your target weight and time</p>
+        
+        <button class="target-button" id="targetButton">Your Target</button>
+    </div>
+
+    <script src="BMIpage.js"></script>
+</body>
+</html>

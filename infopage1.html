@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Info - Step 1</title>
+    <link rel="stylesheet" href="infopage1.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="form-container">
+        <h2>Your Info</h2>
+        <p>Step 1/2</p>
+
+        <!-- Form starts here -->
+        <form id="info-form">
+            <!-- Your Name -->
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required>
+
+            <!-- Your Nickname -->
+            <label for="nickname">Your Nickname</label>
+            <input type="text" id="nickname" name="nickname" placeholder="JS" required>
+
+            <!-- Your Email -->
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="johnsmith@example.com" required>
+
+            <!-- Your Country -->
+            <label for="country">Your Country</label>
+            <input type="text" id="country" name="country" placeholder="Sweden" required>
+
+            <!-- Your Phone -->
+            <label for="phone">Your Phone</label>
+            <div class="phone-container">
+                <select id="country-code">
+                    <option value="+92">+92</option>
+                    <option value="+1">+1</option>
+                    <option value="+91">+91</option>
+                    <!-- Add more country codes as needed -->
+                </select>
+                <input type="tel" id="phone" name="phone" placeholder="xxxxxxxxxx" maxlength="10" required>
+            </div>
+
+            <!-- You're here for -->
+            <label for="purpose">You're here for</label>
+            <select id="purpose" name="purpose" required>
+                <option value="" disabled selected>Select a purpose</option>
+                <option value="Loosing Weight">Loosing Weight</option>
+                <option value="Gaining Weight">Gaining Weight</option>
+                <option value="Keeping Weight">Keeping Weight</option>
+                <option value="Being Fit">Being Fit</option>
+            </select>
+
+            <!-- Next Button -->
+            <button type="button" id="next-btn">Next</button>
+        </form>
+    </div>
+
+    <script src="infopage1.js" defer></script> <!-- Link to the JS file -->
+</body>
+</html>

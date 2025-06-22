@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Food</title>
+    <link rel="stylesheet" href="addfood.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="form-container">
+        <!-- Top Header with Back Button and Title -->
+        <div class="header">
+            <button id="back-btn" class="back-btn">&larr; Back</button>
+            <h2 class="form-title">Add Food</h2>
+        </div>
+
+        <!-- Form -->
+        <form id="add-food-form">
+            <!-- Food Name -->
+            <label for="food-name">Food Name</label>
+            <input type="text" id="food-name" name="food-name" placeholder="Enter food name" required>
+            <span id="food-name-error" class="error-message"></span>
+
+            <!-- Calories -->
+            <label for="calories">Calories</label>
+            <input type="number" id="calories" name="calories" placeholder="Enter calories" required>
+            <span id="calories-error" class="error-message"></span>
+
+            <!-- Protein -->
+            <label for="protein">Protein (g)</label>
+            <input type="number" id="protein" name="protein" placeholder="Enter protein content" required>
+            <span id="protein-error" class="error-message"></span>
+
+            <!-- Carbohydrates -->
+            <label for="carbohydrates">Carbohydrates (g)</label>
+            <input type="number" id="carbohydrates" name="carbohydrates" placeholder="Enter carbohydrates content" required>
+            <span id="carbohydrates-error" class="error-message"></span>
+
+            <!-- Fat -->
+            <label for="fat">Fat (g)</label>
+            <input type="number" id="fat" name="fat" placeholder="Enter fat content" required>
+            <span id="fat-error" class="error-message"></span>
+
+            <!-- Vitamins -->
+            <label for="vitamins">Vitamins</label>
+            <input type="text" id="vitamins" name="vitamins" placeholder="Enter vitamins" required>
+            <span id="vitamins-error" class="error-message"></span>
+
+            <!-- Minerals -->
+            <label for="minerals">Minerals</label>
+            <input type="text" id="minerals" name="minerals" placeholder="Enter minerals" required>
+            <span id="minerals-error" class="error-message"></span>
+
+            <!-- Add Food Button -->
+            <button type="button" id="add-food-btn">Add Food</button>
+        </form>
+    </div>
+
+    <script src="addfood.js"></script> <!-- Link to the JS file -->
+</body>
+</html>

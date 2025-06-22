@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="loginpage.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Back Button -->
+    <div class="back-button">
+      <a id="backButton" href="index.html">&#8592;</a>
+    </div>
+
+    <!-- Login Form -->
+    <h1>Log In</h1>
+    <form id="loginForm">
+      <input type="email" id="emailField" placeholder="Email" required>
+      <div class="password-container">
+        <input type="password" id="passwordField" placeholder="Password" required>
+        <span class="eye-icon" id="togglePassword">👁️</span>
+      </div>
+      <button type="submit" class="login-btn">Log In</button>
+      <!-- Add "Forgot Password" link below the login button -->
+      <a href="#" id="forgotPasswordLink" style="display: block; margin-top: 10px; color: #7d9eaf;">Forgot Password?</a>
+
+    </form>
+  </div>
+
+  <!-- Include the external JavaScript file -->
+  <script src="loginpage.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.form-container {
+    width: 60%;
+    max-width: 320px;
+    margin: 20px auto;
+    padding: 18px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between Back button and title */
+    margin-bottom: 20px;
+}
+
+/* Form Title */
+.form-title {
+    margin: 0;
+    font-size: 24px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+/* Back Button */
+.back-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #a8c3d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    width: 25%;
+    margin-top: 20px;
+}
+
+.back-btn:hover {
+    background-color: #7aa5b8;
+}
+
+/* Error Message */
+.error-message {
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+/* General Input Styling */
+input[type="text"], input[type="number"], button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Add Food Button */
+button#add-food-btn {
+    background-color: #a8c3d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#add-food-btn:hover {
+    background-color: #7aa5b8;
+}

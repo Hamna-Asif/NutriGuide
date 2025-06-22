@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header with Back Button and "ADMIN" title -->
+    <div class="header">
+      <button class="back-button" onclick="NavigationManager.navigateBack()">← Back</button>
+      <h2>User Profile</h2>
+    </div>
+    <!-- Add a circular image under the profile details -->
+    <div class="profile-image">
+      <img src="profile.png" alt="User Profile Image" class="circular-image">
+    </div>
+
+
+    <div class="profile-table">
+      <!-- <img src="avatar.png" alt="Profile Avatar" class="avatar"> -->
+      <div class="table-row">
+        <span>Name:</span>
+        <span id="userName">John Smith</span>
+      </div>
+      <div class="table-row">
+        <span>Nickname:</span>
+        <span id="userNickname">John</span>
+      </div>
+      <div class="table-row">
+        <span>ID:</span>
+        <span id="userId">1</span>
+      </div>
+      <div class="table-row">
+        <span>Email:</span>
+        <span id="userEmail">Johnsmith@example.com</span>
+      </div>
+      <div class="table-row">
+        <span>Phone:</span>
+        <span id="userPhone">+92 1234567890</span>
+      </div>
+      <div class="table-row">
+        <span>Weight:</span>
+        <span id="userWeight">70kg</span>
+      </div>
+      <div class="table-row">
+        <span>Height:</span>
+        <span id="userHeight">178cm</span>
+      </div>
+      <div class="table-row">
+        <span>Target:</span>
+        <span id="userTarget">65kg</span>
+      </div>
+    </div>
+
+    <!-- Search User Button -->
+    <button class="search-button" onclick="NavigationManager.searchUser()">Edit Info</button>
+    <button class="log_out" onclick="NavigationManager.logout()">Log out</button>
+    <!-- Navigation Buttons (Home, Diaries, Profile, Settings) stacked horizontally -->
+    <div class="nav-buttons">
+      <button onclick="NavigationManager.navigateToHome()">Home</button>
+      <button onclick="NavigationManager.navigateToDiaries()">Diaries</button>
+      <button onclick="NavigationManager.navigateToProfile()">Profile</button>
+      <button onclick="NavigationManager.navigateToSettings()">Settings</button>
+    </div>
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>

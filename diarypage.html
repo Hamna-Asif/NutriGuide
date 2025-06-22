@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary</title>
+    <link rel="stylesheet" href="diarypage.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a id="backButton" href="profile.html">&larr;</a>
+            <h2>Diary</h2>
+        </header>
+
+        <!-- Date Selector -->
+        <div class="date-selector">
+            <label for="datePicker">Select Date:</label>
+            <input type="date" id="datePicker" onchange="fetchAndDisplayFoodForDate()" />
+        </div>
+
+        <!-- Calorie Overview -->
+        <div class="calorie-overview">
+            <div class="calorie-section taken">
+                <span id="caloriesTaken">0 Kcal</span>
+                <p>Total Calories Taken</p>
+            </div>
+            <div class="calorie-section total">
+                <span id="dailyCalories">1862 Kcal</span> <!-- Dynamic daily calorie -->
+                <p>Total Daily Calories</p>
+            </div>
+            <!-- <div class="calorie-section burnt">
+                <span id="caloriesBurnt">0 Kcal</span>
+                <p>Burnt</p>
+            </div> -->
+        </div>
+
+        <!-- Nutritional Breakdown -->
+        <div class="nutritional-overview">
+            <div class="nutrient">Carbs: <span id="carbs">0/225g</span></div>
+            <div class="nutrient">Protein: <span id="protein">0/79g</span></div>
+            <div class="nutrient">Fat: <span id="fat">0/60g</span></div>
+        </div>
+
+        <!-- Meal Sections -->
+        <div class="meal-section">
+            <div class="meal-header" onclick="toggleMeal('breakfast')">+ Breakfast</div>
+            <div class="meal-content" id="breakfastContent">
+                <p>Total Energy: <span id="breakfastCalories">0</span> Kcal</p>
+                <ul id="breakfastItems">
+                    <!-- Food items will appear here -->
+                </ul>
+                <button class="add-food-button" onclick="goToFoodPage('breakfast')">+</button>
+            </div>
+        </div>
+
+        <div class="meal-section">
+            <div class="meal-header" onclick="toggleMeal('lunch')">+ Lunch</div>
+            <div class="meal-content" id="lunchContent">
+                <p>Total Energy: <span id="lunchCalories">0</span> Kcal</p>
+                <ul id="lunchItems">
+                    <!-- Food items will appear here -->
+                </ul>
+                <button class="add-food-button" onclick="goToFoodPage('lunch')">+</button>
+            </div>
+        </div>
+
+        <div class="meal-section">
+            <div class="meal-header" onclick="toggleMeal('dinner')">+ Dinner</div>
+            <div class="meal-content" id="dinnerContent">
+                <p>Total Energy: <span id="dinnerCalories">0</span> Kcal</p>
+                <ul id="dinnerItems">
+                    <!-- Food items will appear here -->
+                </ul>
+                <button class="add-food-button" onclick="goToFoodPage('dinner')">+</button>
+            </div>
+        </div>
+
+        <div class="meal-section">
+            <div class="meal-header" onclick="toggleMeal('snacks')">+ Snacks</div>
+            <div class="meal-content" id="snacksContent">
+                <p>Total Energy: <span id="snacksCalories">0</span> Kcal</p>
+                <ul id="snacksItems">
+                    <!-- Food items will appear here -->
+                </ul>
+                <button class="add-food-button" onclick="goToFoodPage('snacks')">+</button>
+            </div>
+        </div>
+
+        <!-- Footer Navigation -->
+        <footer>
+            <a href="startingpage.html" class="nav-button">Home</a>
+            <a href="diarypage.html" class="nav-button">Diaries</a>
+            <a href="settings.html" class="nav-button">Settings</a>
+            <a href="profile.html" class="nav-button">Profile</a>
+        </footer>        
+    </div>
+
+    <script src="diarypage.js"></script>
+</body>
+</html>

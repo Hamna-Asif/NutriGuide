@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="admin2.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Back Button -->
+    <button class="back-button" onclick="NavigationManager.navigateBack()">← Back</button>
+
+    <h2>Admin Profile</h2>
+    <img src="profile.png" alt="Admin Profile Picture" class="profile-picture">
+    <div class="profile-section">
+      <p><b>Name:</b> <span id="profileName"></span></p>
+      <p><b>ID:</b> <span id="profileId"></span></p>
+      <p><b>Email:</b> <span id="profileEmail"></span></p>
+      <p><b>Phone:</b> <span id="profilePhone"></span></p>
+      <!-- <p><b>Weight:</b> <span id="profileWeight"></span> Kg</p>
+      <p><b>Height:</b> <span id="profileHeight"></span> Cm</p>
+      <p><b>Target Weight:</b> <span id="profileTargetWeight"></span> Kg</p> -->
+    </div>
+
+    
+
+    <button class="add-food-button" onclick="NavigationManager.navigateTo('addfood')">Add Food</button>
+    <!-- Search Button -->
+    <button class="search-button" onclick="NavigationManager.searchUser()">Search User</button>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+      <button onclick="NavigationManager.navigateTo('home')">Home</button>
+      <button onclick="NavigationManager.navigateTo('settings')">Settings</button>
+      <!-- <button onclick="NavigationManager.navigateTo('diaries')">Diaries</button> -->
+      <button onclick="NavigationManager.navigateTo('profile')">Profile </button>
+    </div>
+  </div>
+
+  <script src="admin2.js"></script>
+</body>
+</html>

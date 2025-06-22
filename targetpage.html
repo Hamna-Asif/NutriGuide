@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Target Weight</title>
+    <link rel="stylesheet" href="targetpage.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button id="backButton" onclick="goBack()">&larr;</button>
+            <h2>Your Target Weight</h2>
+        </header>
+
+        <div class="weight-range">
+            <strong>Your Healthy weight range:</strong>
+            <div id="healthyRange">"healthyRange">57.2 - 77.5</div>
+        </div>
+        
+        <!-- <div class="suggestion-text">
+            Our Suggestion:
+            <span class="suggestion-highlight" id="suggestion">To lose 12.5 kg in 135 days.</span>
+        </div> -->
+
+        <p class="instruction">Choose a logical weight and duration</p>
+        
+        <div class="input-group">
+            <input type="number" id="targetWeight" placeholder="Target Weight">
+            <div class="unit-toggle">
+                <button class="active" id="kgButton">kg</button>
+                <button id="lbsButton">lbs</button>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <input type="number" id="durationDays" placeholder="During (days)">
+        </div>
+
+        <button class="lets-see-button" id="letsSeeButton">Let's see!</button>
+    </div>
+
+    <script src="targetpage.js"></script>
+</body>
+</html>

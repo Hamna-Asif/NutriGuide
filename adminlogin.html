@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="adminlogin.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Back Button -->
+    <div class="back-button">
+      <a id="backButton" href="index.html">&#8592;</a> <!-- Left arrow -->
+    </div>
+
+    <!-- Login Form -->
+    <h1>Log In</h1>
+    <form id="loginForm">
+      <input type="email" id="emailField" placeholder="Email" required>
+      <div class="password-container">
+        <input type="password" id="passwordField" placeholder="Password" required>
+        <span class="eye-icon" id="togglePassword">👁️</span>
+      </div>
+      <button type="submit" class="login-btn">Log In</button>
+    </form>
+  </div>
+
+  <!-- Include the external JavaScript file -->
+  <script src="adminlogin.js"></script>
+</body>
+</html>
